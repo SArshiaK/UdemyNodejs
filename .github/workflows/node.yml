@@ -10,6 +10,7 @@ jobs:
     env:
       CI: true
       MONGO_URL: mongodb://localhost/nasa
+      LOCAL_MONGO: mongodb://localhost/nasa
     strategy:
       matrix:
         node-version: [14.x, 16.x]

@@ -15,7 +15,7 @@ mongoose.connection.on('error', (err) => {
 mongoose.set('strictQuery', true);
 
 async function mongoConnect(){
-    await mongoose.connect(LOCAL_MONGO, {
+    await mongoose.connect(MONGO_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     });
